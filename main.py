@@ -12,7 +12,7 @@ def sub_function(x, y):
     print("the subtraction of 2 operand is :", sub)
 
 
-def multiplication_function():
+def multiplication_function(x,y):
     return x * y
 
 
@@ -21,15 +21,25 @@ def div_func(x, y):
     print("division is:", div)
 
 
+def exponent(base, power):
+    result = 1
+    for i in range(power):
+        result *= base
+    print(result)
+
+
 if __name__ == "__main__":
 
     print("0. Exit")
+
+
 
     print("1. Default Choice")
 
     print("2. addition")
     print("3. subtraction")
     print("4. Multiplication")
+    print("5. Exponent")
     print("6 . division")
 
     while True:
@@ -51,9 +61,15 @@ if __name__ == "__main__":
             x = int(input("Enter the number1: "))
             y = int(input("Enter the number2: "))
             print(multiplication_function())
+        if choice == 5:
+            base = int(input("enter the base number:"))
+            power = int(input("enter the power value: "))
+            exponent(base, power)
         if choice == 6:
             num1 = int(input("enter the number: "))
             num2 = int(input("enter the number: "))
             div_func(num1, num2)
+
+
 
         print("Thanks! Come Again")
