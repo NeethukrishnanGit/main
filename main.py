@@ -2,6 +2,7 @@
 
 def default_function():
     print("Hello! Welcome to Menu driven Program")
+    print("Our first program")
 
 
 def add_function(x, y):
