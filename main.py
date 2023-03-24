@@ -3,9 +3,7 @@ def default_function():
 
 
 if __name__ == "__main__":
-
     print("0. Exit")
-
     print("1. Default Choice")
 
     while True:
