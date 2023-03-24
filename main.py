@@ -1,9 +1,12 @@
 def default_function():
     print("Hello! Welcome to Menu driven Program")
 
-def add_function(x,y):
-    sum=x+y
-    print("the addition of 2 operand is :" , sum)
+
+def add_function(x, y):
+    sum = x + y
+    print("the addition of 2 operand is :", sum)
+
+
 if __name__ == "__main__":
     print("0. Exit")
     print("1. Default Choice")
@@ -23,6 +26,6 @@ if __name__ == "__main__":
         if choice == 2:
             operand1 = int(input("enter the first operand:"))
             operand2 = int(input("enter the second operand:"))
-            add_function(operand1,operand2)
+            add_function(operand1, operand2)
 
     print("Thanks! Come Again")
