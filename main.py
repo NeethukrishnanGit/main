@@ -12,6 +12,10 @@ def sub_function(x, y):
     print("the subtraction of 2 operand is :", sub)
 
 
+def multiplication_function():
+    return x * y
+
+
 def div_func(x, y):
     div = x / y
     print("division is:", div)
@@ -25,6 +29,7 @@ if __name__ == "__main__":
 
     print("2. addition")
     print("3. subtraction")
+    print("4. Multiplication")
     print("6 . division")
 
     while True:
@@ -34,9 +39,6 @@ if __name__ == "__main__":
         if not choice:
             break
 
-        if choice == 1:
-            default_function()
-
         if choice == 2:
             operand1 = int(input("enter the first operand:"))
             operand2 = int(input("enter the second operand:"))
@@ -45,6 +47,10 @@ if __name__ == "__main__":
             operand1 = int(input("enter the first operand:"))
             operand2 = int(input("enter the second operand:"))
             sub_function(operand1, operand2)
+        if choice == 4:
+            x = int(input("Enter the number1: "))
+            y = int(input("Enter the number2: "))
+            print(multiplication_function())
         if choice == 6:
             num1 = int(input("enter the number: "))
             num2 = int(input("enter the number: "))
