@@ -50,6 +50,8 @@ if __name__ == "__main__":
 
         if not choice:
             break
+        if choice == 1:
+            default_function()
 
         if choice == 2:
             operand1 = int(input("enter the first operand:"))
@@ -71,7 +73,6 @@ if __name__ == "__main__":
             num1 = int(input("enter the number: "))
             num2 = int(input("enter the number: "))
             div_func(num1, num2)
-
 
 
         print("Thanks! Come Again")
