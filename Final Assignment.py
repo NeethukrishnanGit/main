@@ -41,3 +41,5 @@ if count == 2:
     print(num, "is a prime number")
 else:
     print(num, "is not a prime number")
+
+# Print odd and even number
