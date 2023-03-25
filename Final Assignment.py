@@ -67,8 +67,7 @@ if input_string == reversed_string:
 else:
     print(f"the given string \"{input_string}\" is not palindrom")
 
-#factorial of a number
-#by ajay
+#factorial of a number by ajay
 n=int(input("Enter the number:"))
 fact=1
 for i in range(1,n+1):
@@ -80,5 +79,13 @@ a=[1,2,3,4,5,6,7,8,9,10]
 total=sum(a)
 print("sum of ten numbers",total)
 
-
-
+# nivetha
+num = int(input("enter the number: "))
+count = 0
+for i in range(1, num + 1):
+    if num % i == 0:
+        count += 1
+if count == 2:
+    print(num, "is a prime number")
+else:
+    print(num, "is not a prime number")
