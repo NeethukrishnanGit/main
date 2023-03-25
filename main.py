@@ -1,4 +1,4 @@
-#MENU DRIVEN PROGRAM
+# MENU DRIVEN PROGRAM
 
 def default_function():
     print("Hello! Welcome to Menu driven Program")
@@ -15,7 +15,7 @@ def sub_function(x, y):
     print("the subtraction of 2 operand is :", sub)
 
 
-def multiplication_function(x,y):
+def multiplication_function(x, y):
     return x * y
 
 
@@ -34,20 +34,16 @@ def exponent(base, power):
 if __name__ == "__main__":
 
     print("0. Exit")
-
-
-
     print("1. Default Choice")
-
     print("2. addition")
     print("3. subtraction")
     print("4. Multiplication")
     print("5. Exponent")
-    print("6 . division")
+    print("6. division")
 
     while True:
 
-        choice = int(input("Enter a choice"))
+        choice = int(input("Enter a choice: "))
 
         if not choice:
             break
@@ -55,19 +51,19 @@ if __name__ == "__main__":
             default_function()
 
         if choice == 2:
-            operand1 = int(input("enter the first operand:"))
-            operand2 = int(input("enter the second operand:"))
+            operand1 = int(input("enter the first operand: "))
+            operand2 = int(input("enter the second operand: "))
             add_function(operand1, operand2)
         if choice == 3:
-            operand1 = int(input("enter the first operand:"))
-            operand2 = int(input("enter the second operand:"))
+            operand1 = int(input("enter the first operand: "))
+            operand2 = int(input("enter the second operand: "))
             sub_function(operand1, operand2)
         if choice == 4:
             x = int(input("Enter the number1: "))
             y = int(input("Enter the number2: "))
-            print(multiplication_function())
+            print(multiplication_function(x, y))
         if choice == 5:
-            base = int(input("enter the base number:"))
+            base = int(input("enter the base number: "))
             power = int(input("enter the power value: "))
             exponent(base, power)
         if choice == 6:
@@ -75,5 +71,4 @@ if __name__ == "__main__":
             num2 = int(input("enter the number: "))
             div_func(num1, num2)
 
-
-        print("Thanks! Come Again")
+    print("Thanks! Come Again")
