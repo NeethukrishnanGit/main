@@ -43,3 +43,16 @@ else:
     print(num, "is not a prime number")
 
 # Print odd and even number
+
+# Print odd or even
+n = int(input("enter number of elements: "))
+numbers = [int(input(f"enter the number {i} : ")) for i in range(1, n + 1)]
+odd = []
+even = []
+for num in numbers:
+    if num % 2 == 0:
+        even.append(num)
+    else:
+        odd.append(num)
+print(f"odd numbers: {odd}")
+print(f"even numbers: {even}")
