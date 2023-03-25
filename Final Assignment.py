@@ -58,9 +58,16 @@ print(f"odd numbers: {odd}")
 print(f"even numbers: {even}")
 
 
+
 #factorial of a number by ajay
 n=int(input("Enter the number:"))
 fact=1
 for i in range(1,n+1):
     fact=fact*i
 print(fact)
+
+#CODE FOR SUM OF TEN NUMBERS
+a=[1,2,3,4,5,6,7,8,9,10]
+total=sum(a)
+print("sum of ten numbers",total)
+
