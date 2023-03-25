@@ -5,16 +5,23 @@ if __name__ == '__main__':
 
 # CODE FOR INPUT  STRING IS PALINDROM OR NOT
 
-input_string=input("enter the string: \n")
-reversed_string= input_string[::-1]
+input_string = input("enter the string: \n")
+reversed_string = input_string[::-1]
 if input_string == reversed_string:
     print(f"the given string \"{input_string}\" is palindrom")
 else:
     print(f"the given string \"{input_string}\" is not palindrom")
 
-#factorial of a number
-n=int(input("Enter the number:"))
-fact=1
-for i in range(1,n+1):
-    fact=fact*i
+# factorial of a number
+n = int(input("Enter the number:"))
+fact = 1
+for i in range(1, n + 1):
+    fact = fact * i
 print(fact)
+
+# Code for sum of 10 odd numbers
+c = 0
+for i in range(1, 20):
+    if i % 2 != 0:
+        c += i
+print("Sum of first 10 odd number is ", c)
