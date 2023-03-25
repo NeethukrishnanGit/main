@@ -58,6 +58,14 @@ print(f"odd numbers: {odd}")
 print(f"even numbers: {even}")
 
 
+# CODE FOR INPUT  STRING IS PALINDROM OR NOT by arini
+
+input_string=input("enter the string: \n")
+reversed_string= input_string[::-1]
+if input_string == reversed_string:
+    print(f"the given string \"{input_string}\" is palindrom")
+else:
+    print(f"the given string \"{input_string}\" is not palindrom")
 
 #factorial of a number
 #by ajay
