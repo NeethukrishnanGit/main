@@ -59,7 +59,8 @@ print(f"even numbers: {even}")
 
 
 
-#factorial of a number by ajay
+#factorial of a number
+#by ajay
 n=int(input("Enter the number:"))
 fact=1
 for i in range(1,n+1):
