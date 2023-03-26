@@ -30,3 +30,14 @@ for i in range(1, 20):
     if i % 2 != 0:
         c += i
 print("Sum of first 10 odd number is ", c)
+
+# CODE FOR INPUT  NUMBER IS PRIME OR NOT
+num = int(input("enter the number: "))
+count = 0
+for i in range(1, num + 1):
+    if num % i == 0:
+        count += 1
+if count == 2:
+    print(num, "is a prime number")
+else:
+    print(num, "is not a prime number")
